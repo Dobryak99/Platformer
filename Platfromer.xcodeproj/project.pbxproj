@@ -37,27 +37,27 @@
 		1123811229F2D5CE002BA8AA /* CoordinatesForView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 112380F929F2D5CE002BA8AA /* CoordinatesForView.cpp */; };
 		1123811329F2D5CE002BA8AA /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 112380FA29F2D5CE002BA8AA /* Button.cpp */; };
 		1123811429F2D5CE002BA8AA /* SpawnCoins.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 112380FB29F2D5CE002BA8AA /* SpawnCoins.cpp */; };
-		1123811A29F2D636002BA8AA /* Resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1123811929F2D636002BA8AA /* Resources */; };
 		1123811C29F2D65E002BA8AA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1123811B29F2D65E002BA8AA /* main.cpp */; };
+		1123815729F2E333002BA8AA /* Resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1123815529F2E328002BA8AA /* Resources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		112380CB29F2D53D002BA8AA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1123811629F2D5F6002BA8AA /* CopyFiles */ = {
+		1123815629F2E32E002BA8AA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				1123811A29F2D636002BA8AA /* Resources in CopyFiles */,
+				1123815729F2E333002BA8AA /* Resources in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +95,8 @@
 		112380F929F2D5CE002BA8AA /* CoordinatesForView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CoordinatesForView.cpp; sourceTree = "<group>"; };
 		112380FA29F2D5CE002BA8AA /* Button.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Button.cpp; sourceTree = "<group>"; };
 		112380FB29F2D5CE002BA8AA /* SpawnCoins.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpawnCoins.cpp; sourceTree = "<group>"; };
-		1123811929F2D636002BA8AA /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		1123811B29F2D65E002BA8AA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1123815529F2E328002BA8AA /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 		112380C429F2D53D002BA8AA = {
 			isa = PBXGroup;
 			children = (
-				1123811929F2D636002BA8AA /* Resources */,
+				1123815529F2E328002BA8AA /* Resources */,
 				112380CF29F2D53D002BA8AA /* Platfromer */,
 				112380CE29F2D53D002BA8AA /* Products */,
 				112380D729F2D557002BA8AA /* Frameworks */,
@@ -188,7 +188,7 @@
 				112380C929F2D53D002BA8AA /* Sources */,
 				112380CA29F2D53D002BA8AA /* Frameworks */,
 				112380CB29F2D53D002BA8AA /* CopyFiles */,
-				1123811629F2D5F6002BA8AA /* CopyFiles */,
+				1123815629F2E32E002BA8AA /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -381,11 +381,13 @@
 		112380D529F2D53D002BA8AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -393,11 +395,13 @@
 		112380D629F2D53D002BA8AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
