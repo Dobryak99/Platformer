@@ -36,7 +36,7 @@ void Engine::DetectCollision()
                         }
                     }
                 }
-                if(arrayLevel[y][x] == '4')     // if player reached goal
+                if(arrayLevel[y][x] == '4' || arrayLevel[y][x] == '6')     // if player reached goal
                 {
                     if(Player.getPosition().intersects(block))
                     {
