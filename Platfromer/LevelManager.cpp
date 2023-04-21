@@ -115,6 +115,10 @@ char ** LevelManager::createLevel(VertexArray & rVaLevel)
                 heartNumber++;
                 verticalOffset = 0 * TILE_SIZE;
             }
+            if(arrayLevel[y][x] == '5')
+            {
+                verticalOffset = 5 * TILE_SIZE;
+            }
             
             //Set each QUAD with the texture
             rVaLevel[currentVertex + 0].texCoords = Vector2f(0, 0 + verticalOffset);

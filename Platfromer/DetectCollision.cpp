@@ -54,6 +54,21 @@ void Engine::DetectCollision()
                         }
                     }
                 }
+                if(arrayLevel[y][x] == '5')             //if player collide with spikes
+                {
+                    if(Player.getFeet().intersects(block))
+                    {
+                        if(Player.getHealth() > 1)      //if player's health greater than 1
+                        {
+                            Player.spawn(LM.getStartPosition(), GRAVITY);   //spawn player at the start of the level
+                            Player.Damage();            // -1 HP
+                            
+                        }else{                          // Player dies
+                            GameOver = true;            //return to game over menu
+                            NewLevelRequired = true;    //new level should be loaded
+                        }
+                    }
+                }
             }
     }
     
