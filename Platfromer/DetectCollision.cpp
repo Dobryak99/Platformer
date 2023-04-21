@@ -6,9 +6,6 @@ void Engine::DetectCollision()
     block.width = TILE_SIZE;
     block.height = TILE_SIZE;
     
-    //int endX = LM.getLevelSize().x;         // Max X coordinate of the level
-    //int endY = LM.getLevelSize().y;         // Max Y coordinate of the level
-    
     // Check blocks around player for collision
     for(int y = Player.getPosition().top / TILE_SIZE;y < (Player.getPosition().top + Player.getPosition().height) / TILE_SIZE; y++)
     {
