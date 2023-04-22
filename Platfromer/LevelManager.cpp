@@ -116,44 +116,44 @@ char ** LevelManager::createLevel(VertexArray & rVaLevel)
                 heartNumber++;
                 verticalOffset = 0 * TILE_SIZE;
             }
-            if(arrayLevel[y][x] == '5')
+            if(arrayLevel[y][x] == '5')             //spawn spikes
             {
                 verticalOffset = 5 * TILE_SIZE;
             }
-            if(arrayLevel[y][x] == 'Q')
+            if(arrayLevel[y][x] == 'Q')             //part of the portal
             {
                 horizontalOffset = 1 * TILE_SIZE;
             }
-            if(arrayLevel[y][x] == 'W')
+            if(arrayLevel[y][x] == 'W')             //part of the portal
             {
                 verticalOffset = 1 * TILE_SIZE;
                 horizontalOffset = 1 * TILE_SIZE;
             }
-            if(arrayLevel[y][x] == 'E')
+            if(arrayLevel[y][x] == 'E')             //part of the portal
             {
                 verticalOffset = 2 * TILE_SIZE;
                 horizontalOffset = 1 * TILE_SIZE;
             }
-            if(arrayLevel[y][x] == 'R')
+            if(arrayLevel[y][x] == 'R')             //part of the portal
             {
                 verticalOffset = 3 * TILE_SIZE;
                 horizontalOffset = 1 * TILE_SIZE;
             }
-            if(arrayLevel[y][x] == 'T')
+            if(arrayLevel[y][x] == 'T')             //part of the portal
             {
                 verticalOffset = 4 * TILE_SIZE;
                 horizontalOffset = 1 * TILE_SIZE;
             }
-            if(arrayLevel[y][x] == 'Y')
+            if(arrayLevel[y][x] == 'Y')             //part of the portal
             {
                 verticalOffset = 5 * TILE_SIZE;
                 horizontalOffset = 1 * TILE_SIZE;
             }
-            if(arrayLevel[y][x] == 'U')
+            if(arrayLevel[y][x] == 'U')             //part of the portal
             {
                 horizontalOffset = 2 * TILE_SIZE;
             }
-            if(arrayLevel[y][x] == '6')
+            if(arrayLevel[y][x] == '6')             //part of the portal
             {
                 verticalOffset = 1 * TILE_SIZE;
                 horizontalOffset = 2 * TILE_SIZE;

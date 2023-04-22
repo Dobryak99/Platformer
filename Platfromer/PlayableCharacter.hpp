@@ -36,7 +36,7 @@ public:
     PlayableCharacter();                            //constructor
     void spawn(Vector2f & position, float gravity); //spawn function
     void handleInput();                             //how to manipulate the player
-    void update(float & dt);                          //update function
+    void update(float & dt);                        //update function
     void Damage();                                  //subrtact health point
     void HealthUp();                                //plus one health point
     void stopLeft(float position);                  //stop moving left
@@ -46,12 +46,12 @@ public:
     void Bounce();                                  //player bounce from enemy's head
     int getHealth();                                //get player's health
     void resetHealth();                             //reset player's health after death or after complete all levels
-    FloatRect & getFeet();                            //get rect of the feet
-    FloatRect & getHead();                            //get rect of the Head
-    FloatRect & getRight();                           //get rect of the right side
-    FloatRect & getLeft();                            //get rect of the left side
+    FloatRect & getFeet();                          //get rect of the feet
+    FloatRect & getHead();                          //get rect of the Head
+    FloatRect & getRight();                         //get rect of the right side
+    FloatRect & getLeft();                          //get rect of the left side
     FloatRect getPosition();                        //get player's global bounds
-    Sprite & getSprite();                             //get player's sprite
+    Sprite & getSprite();                           //get player's sprite
     Vector2f getAXIS();                             //get player's X and Y
 };
 

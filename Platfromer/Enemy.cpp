@@ -4,7 +4,7 @@
 Enemy::Enemy()
 {
     EnemyTexture = TextureManager::GetTexture(ENEMY_TEXTURE);      //add texture
-    EnemySprite.setTexture(EnemyTexture);                                           //set texture
+    EnemySprite.setTexture(EnemyTexture);                          //set texture
 }
 
 void Enemy::Spawn(Vector2f & position, float gravity)
@@ -118,7 +118,7 @@ FloatRect & Enemy::getLeft()
     return LeftSide;                                                //get left side rect
 }
 
-FloatRect & Enemy::getBody()                                          //get rect of the body
+FloatRect & Enemy::getBody()                                        //get rect of the body
 {
     return Body;
 }

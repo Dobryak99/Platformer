@@ -1,6 +1,8 @@
 #ifndef RESOURCES_H
 #define RESOURCES_H
 
+// TEXTURES
+
 #define BACKGROUND_TEXTURE "Resources/textures/game_bg.png"
 #define BACKGROUND_GAME_TEXTURE "Resources/textures/game_bg.png"
 #define LOAD_NEW_LEVEL_TEXTURE "Resources/textures/loadlevelbg.png"
@@ -13,8 +15,10 @@
 #define COLLECTABLE_HEART_TEXTURE "Resources/textures/Heart collectable.png"
 #define COIN_TEXTURE "Resources/textures/coin.png"
 
+// FONT
 #define FONT "Resources/font/PixBob-lite Free.ttf"
 
+// LEVELS
 #define LEVEL1 "Resources/map/Level1.txt"
 #define LEVEL2 "Resources/map/Level2.txt"
 #define LEVEL3 "Resources/map/Level3.txt"
