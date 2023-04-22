@@ -36,7 +36,7 @@ void Engine::DetectCollision()
                         }
                     }
                 }
-                if(arrayLevel[y][x] == '4')     // if player reached goal
+                if(arrayLevel[y][x] == '4' || arrayLevel[y][x] == '6')     // if player reached goal
                 {
                     if(Player.getPosition().intersects(block))
                     {
@@ -51,6 +51,21 @@ void Engine::DetectCollision()
                             LM.setCurrentLevel(0);      //set level number to 0
                             Player.resetHealth();       //reset player's health
                             Score = 0;                  //reset score
+                        }
+                    }
+                }
+                if(arrayLevel[y][x] == '5')             //if player collide with spikes
+                {
+                    if(Player.getFeet().intersects(block))
+                    {
+                        if(Player.getHealth() > 1)      //if player's health greater than 1
+                        {
+                            Player.spawn(LM.getStartPosition(), GRAVITY);   //spawn player at the start of the level
+                            Player.Damage();            // -1 HP
+                            
+                        }else{                          // Player dies
+                            GameOver = true;            //return to game over menu
+                            NewLevelRequired = true;    //new level should be loaded
                         }
                     }
                 }

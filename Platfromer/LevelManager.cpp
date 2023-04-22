@@ -77,6 +77,7 @@ char ** LevelManager::createLevel(VertexArray & rVaLevel)
             
             //Decide which of the tile to choose
             int verticalOffset = 0;
+            int horizontalOffset = 0;
             if(arrayLevel[y][x] == '0')             //blank
             {
                 verticalOffset = 0 * TILE_SIZE;
@@ -115,12 +116,54 @@ char ** LevelManager::createLevel(VertexArray & rVaLevel)
                 heartNumber++;
                 verticalOffset = 0 * TILE_SIZE;
             }
+            if(arrayLevel[y][x] == '5')             //spawn spikes
+            {
+                verticalOffset = 5 * TILE_SIZE;
+            }
+            if(arrayLevel[y][x] == 'Q')             //part of the portal
+            {
+                horizontalOffset = 1 * TILE_SIZE;
+            }
+            if(arrayLevel[y][x] == 'W')             //part of the portal
+            {
+                verticalOffset = 1 * TILE_SIZE;
+                horizontalOffset = 1 * TILE_SIZE;
+            }
+            if(arrayLevel[y][x] == 'E')             //part of the portal
+            {
+                verticalOffset = 2 * TILE_SIZE;
+                horizontalOffset = 1 * TILE_SIZE;
+            }
+            if(arrayLevel[y][x] == 'R')             //part of the portal
+            {
+                verticalOffset = 3 * TILE_SIZE;
+                horizontalOffset = 1 * TILE_SIZE;
+            }
+            if(arrayLevel[y][x] == 'T')             //part of the portal
+            {
+                verticalOffset = 4 * TILE_SIZE;
+                horizontalOffset = 1 * TILE_SIZE;
+            }
+            if(arrayLevel[y][x] == 'Y')             //part of the portal
+            {
+                verticalOffset = 5 * TILE_SIZE;
+                horizontalOffset = 1 * TILE_SIZE;
+            }
+            if(arrayLevel[y][x] == 'U')             //part of the portal
+            {
+                horizontalOffset = 2 * TILE_SIZE;
+            }
+            if(arrayLevel[y][x] == '6')             //part of the portal
+            {
+                verticalOffset = 1 * TILE_SIZE;
+                horizontalOffset = 2 * TILE_SIZE;
+            }
             
             //Set each QUAD with the texture
-            rVaLevel[currentVertex + 0].texCoords = Vector2f(0, 0 + verticalOffset);
-            rVaLevel[currentVertex + 1].texCoords = Vector2f(TILE_SIZE, 0 + verticalOffset);
-            rVaLevel[currentVertex + 2].texCoords = Vector2f(TILE_SIZE, TILE_SIZE + verticalOffset);
-            rVaLevel[currentVertex + 3].texCoords = Vector2f(0, TILE_SIZE + verticalOffset);
+            rVaLevel[currentVertex + 0].texCoords = Vector2f(0 + horizontalOffset, 0 + verticalOffset);
+            rVaLevel[currentVertex + 1].texCoords = Vector2f(TILE_SIZE + horizontalOffset, 0 + verticalOffset);
+            rVaLevel[currentVertex + 2].texCoords = Vector2f(TILE_SIZE + horizontalOffset, TILE_SIZE + verticalOffset);
+            rVaLevel[currentVertex + 3].texCoords = Vector2f(0 + horizontalOffset, TILE_SIZE + verticalOffset);
             
             //next QUAD
             currentVertex += VERTS_IN_QUAD;

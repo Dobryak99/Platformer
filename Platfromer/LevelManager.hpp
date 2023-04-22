@@ -3,7 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
-//#include <string>
+#include <string>
 #include "TextureManager.hpp"
 #include "RESOURCES.h"
 #include <fstream>
@@ -26,7 +26,7 @@ private:
 public:
     const int TILE_SIZE = 32;                               //Size of the texture
     const int VERTS_IN_QUAD = 4;                            //Verticies of the texture
-    Vector2i & getLevelSize();                                //get Level Size
+    Vector2i & getLevelSize();                              //get Level Size
     Vector2f & getStartPosition();                          //get Player's start position
     std::vector<Vector2f> & getEnemyStartPosition();        //get enemies' start positions
     std::vector<Vector2f> & getCoinPosition();              //get coins' positions

@@ -7,6 +7,7 @@ void Engine::Draw()
     //if the player in the main menu
     if(MainMenu)
     {
+        engine_window.setMouseCursorVisible(true);          //reveal cursor
         engine_window.setView(MainMenuView);
         engine_window.draw(MainMenuBackgroundSprite);
         engine_window.draw(PlayButton.getText());
@@ -14,6 +15,7 @@ void Engine::Draw()
     }
     if(GameOver)
     {
+        engine_window.setMouseCursorVisible(true);          //reveal cursor
         engine_window.setView(GameOverView);
         engine_window.draw(GameBackgroundSprite);
         engine_window.draw(RestartButton.getText());
@@ -21,6 +23,7 @@ void Engine::Draw()
     }
     if(IsPaused)
     {
+        engine_window.setMouseCursorVisible(true);          //reveal cursor
         engine_window.setView(PauseView);
         engine_window.draw(GameBackgroundSprite);
         engine_window.draw(ResumeButton.getText());
@@ -37,6 +40,7 @@ void Engine::Draw()
     //if the player in the game or in pause menu
     if(IsPlaying)
     {
+        engine_window.setMouseCursorVisible(false);         //hide cursor when playing
         engine_window.draw(GameBackgroundSprite);
         engine_window.draw(VALevel, &tileTexture);
         engine_window.draw(ScoreButton.getText());

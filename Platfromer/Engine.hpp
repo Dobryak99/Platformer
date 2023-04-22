@@ -27,7 +27,6 @@ private:
     bool GameOver = false;
     bool LoadNextLevel = false;
     
-    
     //Variables
     const float TILE_SIZE = 32.0f;
     const float VERTS_IN_QUAD = 4.0f;
@@ -37,6 +36,7 @@ private:
     float waitTime = 0.0f;
     int Score = 0;
     stringstream ssScore;
+    
     //Window
     RenderWindow engine_window;
     
@@ -66,8 +66,8 @@ private:
     Button RestartButton;
     Button ReturnToMainMenuButton;
     Button ResumeButton;
-    Button ScoreButton;
-    Button Loading;
+    Button ScoreButton;                     // Non-clickable
+    Button Loading;                         // Non-clickable
     
     //Views
     View MainMenuView;
@@ -134,8 +134,10 @@ private:
     //Collision Detection function
     void DetectCollision();//float dt);
     
+    //Set coordinates for View
     void CoordinatesForView(Vector2f coord);
     
+    //Set Buttons on the screen
     void HUD();
     
     void SpawnEnemies();

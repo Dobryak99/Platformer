@@ -27,16 +27,16 @@ private:
 public:
     Enemy();                                        //Constructor
     void Spawn(Vector2f & position, float gravity); //spawn enemy
-    void update(float & dt);                          //update enemy
-    FloatRect & getFeet();                            //get rect of the feet
-    FloatRect & getHead();                            //get rect of the Head
-    FloatRect & getRight();                           //get rect of the right side
-    FloatRect & getLeft();                            //get rect of the left side
-    FloatRect & getBody();                            //get rect of the body
+    void update(float & dt);                        //update enemy
+    FloatRect & getFeet();                          //get rect of the feet
+    FloatRect & getHead();                          //get rect of the Head
+    FloatRect & getRight();                         //get rect of the right side
+    FloatRect & getLeft();                          //get rect of the left side
+    FloatRect & getBody();                          //get rect of the body
     FloatRect getPosition();                        //get enemy's global bounds
-    Sprite & getSprite();                             //get enemy's sprite
+    Sprite & getSprite();                           //get enemy's sprite
     void stopFalling(float position);               //stop moving down
     void stopRight(float position);                 //stop moving right
     void stopLeft(float position);                  //stop moving left
-    Vector2f & GetAXIS();                             //get enemy's X and Y coordinates
+    Vector2f & GetAXIS();                           //get enemy's X and Y coordinates
 };
