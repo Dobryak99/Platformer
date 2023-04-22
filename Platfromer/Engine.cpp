@@ -24,6 +24,11 @@ Engine::Engine()
     GameBackgroundSprite.setTextureRect(IntRect(0,0,1280 * 5, 800 ));
     GameBackgroundSprite.setTexture(GameBackgroundTexture);
     
+    GameCaveBackgroundTexture = TextureManager::GetTexture(BACKGROUND_CAVE_TEXTURE);
+    GameCaveBackgroundTexture.setRepeated(true);
+    GameCaveBackgroundSprite.setTextureRect(IntRect(0,0,1280 * 5, 800));
+    GameCaveBackgroundSprite.setTexture(GameCaveBackgroundTexture);
+    
     LoadNewLeveltexture = TextureManager::GetTexture(LOAD_NEW_LEVEL_TEXTURE);
     LoadNewLevelSprite.setTexture(LoadNewLeveltexture);
     

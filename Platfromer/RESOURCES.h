@@ -5,6 +5,7 @@
 
 #define BACKGROUND_TEXTURE "Resources/textures/game_bg.png"
 #define BACKGROUND_GAME_TEXTURE "Resources/textures/game_bg.png"
+#define BACKGROUND_CAVE_TEXTURE "Resources/textures/background_cave.png"
 #define LOAD_NEW_LEVEL_TEXTURE "Resources/textures/loadlevelbg.png"
 #define CLOUD_TEXTURE "Resources/textures/Cloud.png"
 #define TILE_SHEET_TEXTURE "Resources/textures/tile_sheet.png"
