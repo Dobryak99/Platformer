@@ -13,11 +13,16 @@ void Engine::Input()
         {
             if(Keyboard::isKeyPressed(Keyboard::Escape))
             {
-                if(!MainMenu && !GameOver && !LoadNextLevel)                 //don't work if in main menu or game over menu
+                if(!MainMenu && !GameOver && !LoadNextLevel)                 //don't work if in main menu or game over menu or loading new level
                 {
                     IsPaused = !IsPaused;
                     IsPlaying = !IsPlaying;
                 }
+            }
+            if(Keyboard::isKeyPressed(Keyboard::Enter))                     //Cheat-code to skip levels(Only for testing)
+            {
+                LoadNextLevel = true;       //load new level
+                NewLevelRequired = true;    //New level load
             }
         }
         if(event.type == Event::MouseButtonPressed)

@@ -43,7 +43,6 @@ void Engine::Draw()
         engine_window.setMouseCursorVisible(false);         //hide cursor when playing
         engine_window.draw(GameBackgroundSprite);
         engine_window.draw(VALevel, &tileTexture);
-        engine_window.draw(ScoreButton.getText());
         
         
         for(int i = 0; i < Player.getHealth(); i++)
@@ -66,8 +65,14 @@ void Engine::Draw()
         {
             engine_window.draw(Enemies[i].getSprite());
         }
+        
         engine_window.draw(Player.getSprite());
         
+        for(int i = 0; i < Player.getHealth(); i++)
+        {
+            engine_window.draw(Hearts[i]);
+        }
+        engine_window.draw(ScoreButton.getText());
         engine_window.setView(GameView);
     }
     

@@ -12,15 +12,27 @@ char ** LevelManager::createLevel(VertexArray & rVaLevel)
     {
         case 1: levelToLoad = LEVEL1;
                 StartPosition.x = 100;
-                StartPosition.y = 450;
+                StartPosition.y = 650;
                 break;
         case 2: levelToLoad = LEVEL2;
                 StartPosition.x = 100;
                 StartPosition.y = 450;
                 break;
         case 3: levelToLoad = LEVEL3;
+                StartPosition.x = 300;
+                StartPosition.y = 200;
+                break;
+        case 4: levelToLoad = LEVEL4;
                 StartPosition.x = 100;
-                StartPosition.y = 450;
+                StartPosition.y = 550;
+                break;
+        case 5: levelToLoad = LEVEL5;
+                StartPosition.x = 100;
+                StartPosition.y = 500;
+                break;
+        case 6: levelToLoad = LEVEL6;
+                StartPosition.x = 100;
+                StartPosition.y = 750;
                 break;
     }
     
@@ -120,7 +132,7 @@ char ** LevelManager::createLevel(VertexArray & rVaLevel)
             {
                 verticalOffset = 5 * TILE_SIZE;
             }
-            if(arrayLevel[y][x] == 'Q')             //part of the portal
+            if(arrayLevel[y][x] == '6')             //spawn spike up-side-down
             {
                 horizontalOffset = 1 * TILE_SIZE;
             }
@@ -153,9 +165,9 @@ char ** LevelManager::createLevel(VertexArray & rVaLevel)
             {
                 horizontalOffset = 2 * TILE_SIZE;
             }
-            if(arrayLevel[y][x] == '6')             //part of the portal
+            if(arrayLevel[y][x] == '7')             //part of the portal
             {
-                verticalOffset = 1 * TILE_SIZE;
+                verticalOffset = 2 * TILE_SIZE;
                 horizontalOffset = 2 * TILE_SIZE;
             }
             
