@@ -84,6 +84,7 @@ private:
     //Texture for backgrounds
     Texture MainMenuBackgroundTexture;
     Texture GameBackgroundTexture;
+    Texture GameCaveBackgroundTexture;
     Texture LoadNewLeveltexture;
     Texture Playertexture;
     
@@ -101,6 +102,7 @@ private:
     //Sprite for the background textures
     Sprite MainMenuBackgroundSprite;
     Sprite GameBackgroundSprite;
+    Sprite GameCaveBackgroundSprite;
     Sprite LoadNewLevelSprite;
     
     //array of Sprites for hearts to display palyer's health

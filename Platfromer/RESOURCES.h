@@ -5,8 +5,8 @@
 
 #define BACKGROUND_TEXTURE "Resources/textures/game_bg.png"
 #define BACKGROUND_GAME_TEXTURE "Resources/textures/game_bg.png"
+#define BACKGROUND_CAVE_TEXTURE "Resources/textures/background_cave.png"
 #define LOAD_NEW_LEVEL_TEXTURE "Resources/textures/loadlevelbg.png"
-#define CLOUD_TEXTURE "Resources/textures/Cloud.png"
 #define TILE_SHEET_TEXTURE "Resources/textures/tile_sheet.png"
 #define PLAYER_STILL_SHEET_TEXTURE "Resources/textures/player_stay_still_sheet.png"
 #define PLAYER_RUN_TEXTURE "Resources/textures/player_run_sheet.png"
@@ -22,5 +22,8 @@
 #define LEVEL1 "Resources/map/Level1.txt"
 #define LEVEL2 "Resources/map/Level2.txt"
 #define LEVEL3 "Resources/map/Level3.txt"
+#define LEVEL4 "Resources/map/Level4.txt"
+#define LEVEL5 "Resources/map/Level5.txt"
+#define LEVEL6 "Resources/map/Level6.txt"
 
 #endif /* RESOURCES_h */

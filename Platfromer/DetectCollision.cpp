@@ -36,7 +36,7 @@ void Engine::DetectCollision()
                         }
                     }
                 }
-                if(arrayLevel[y][x] == '4' || arrayLevel[y][x] == '6')     // if player reached goal
+                if(arrayLevel[y][x] == '4' || arrayLevel[y][x] == '7')     // if player reached goal
                 {
                     if(Player.getPosition().intersects(block))
                     {
@@ -54,9 +54,9 @@ void Engine::DetectCollision()
                         }
                     }
                 }
-                if(arrayLevel[y][x] == '5')             //if player collide with spikes
+                if(arrayLevel[y][x] == '5' || arrayLevel[y][x] == '6')             //if player collide with spikes
                 {
-                    if(Player.getFeet().intersects(block))
+                    if(Player.getFeet().intersects(block) || Player.getHead().intersects(block))
                     {
                         if(Player.getHealth() > 1)      //if player's health greater than 1
                         {
@@ -83,7 +83,7 @@ void Engine::DetectCollision()
                 block.left = x * TILE_SIZE; // X coordinate of the block( every 50 pixel new block)
                 block.top = y * TILE_SIZE;  // Y coordinate of the block( every 50 pixel new block)
                 
-                if(arrayLevel[y][x] == '1' || arrayLevel[y][x] == '2') // Collide with the grass
+                if(arrayLevel[y][x] == '1' || arrayLevel[y][x] == '2' || arrayLevel[y][x] == '5' || arrayLevel[y][x] == '6') // Collide with the grass
                 {
                     if(Enemies[i].getPosition().intersects(block))  // Enemy collide with the block
                     {
