@@ -19,11 +19,6 @@ void Engine::Input()
                     IsPlaying = !IsPlaying;
                 }
             }
-            if(Keyboard::isKeyPressed(Keyboard::Enter))                     //Cheat-code to skip levels(Only for testing)
-            {
-                LoadNextLevel = true;       //load new level
-                NewLevelRequired = true;    //New level load
-            }
         }
         if(event.type == Event::MouseButtonPressed)
         {

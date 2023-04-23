@@ -40,7 +40,7 @@ void Engine::DetectCollision()
                 {
                     if(Player.getPosition().intersects(block))
                     {
-                        if(LM.getCurrentLevel() < LM.getMaxLevel())     // current level should be less than max level
+                        if(LM.getCurrentLevel() < LM.getMaxLevel() && IsPlaying)     // current level should be less than max level 
                         {
                             LoadNextLevel = true;       //load new level
                             NewLevelRequired = true;    //New level load

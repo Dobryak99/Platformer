@@ -25,5 +25,6 @@
 #define LEVEL4 "Resources/map/Level4.txt"
 #define LEVEL5 "Resources/map/Level5.txt"
 #define LEVEL6 "Resources/map/Level6.txt"
+#define LEVEL7 "Resources/map/Level7.txt"
 
 #endif /* RESOURCES_h */

@@ -18,7 +18,7 @@ private:
     std::vector<Vector2f> EnemyStartPosition;               //Array of enemies' start positions
     std::vector<Vector2f> CoinPosition;                     //Array of coins posittions
     std::vector<Vector2f> HeartPosition;                    //Array of hearts posittions
-    const int MAX_LEVEL = 6;                                //Maximum levels of the game
+    const int MAX_LEVEL = 7;                                //Maximum levels of the game
     int CurrentLevel = 0;                                   //current level
     int EnemyNumber = 0;                                    //Count of enemies on the level
     int coinNumber = 0;                                     //Count of coins on the level

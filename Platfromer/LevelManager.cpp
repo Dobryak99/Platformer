@@ -34,6 +34,10 @@ char ** LevelManager::createLevel(VertexArray & rVaLevel)
                 StartPosition.x = 100;
                 StartPosition.y = 750;
                 break;
+        case 7: levelToLoad = LEVEL7;
+                StartPosition.x = 100;
+                StartPosition.y = 400;
+                break;
     }
     
     ifstream inputFile(levelToLoad);        //open txt file with drawn map
@@ -164,6 +168,11 @@ char ** LevelManager::createLevel(VertexArray & rVaLevel)
             if(arrayLevel[y][x] == 'U')             //part of the portal
             {
                 horizontalOffset = 2 * TILE_SIZE;
+            }
+            if(arrayLevel[y][x] == 'Q')             //part of the portal
+            {
+                horizontalOffset = 2 * TILE_SIZE;
+                verticalOffset = 1 * TILE_SIZE;
             }
             if(arrayLevel[y][x] == '7')             //part of the portal
             {

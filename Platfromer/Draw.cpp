@@ -41,7 +41,12 @@ void Engine::Draw()
     if(IsPlaying)
     {
         engine_window.setMouseCursorVisible(false);         //hide cursor when playing
-        engine_window.draw(GameBackgroundSprite);
+        if(LM.getCurrentLevel() < 4)
+        {
+            engine_window.draw(GameBackgroundSprite);
+        }else{
+            engine_window.draw(GameCaveBackgroundSprite);
+        }
         engine_window.draw(VALevel, &tileTexture);
         
         
