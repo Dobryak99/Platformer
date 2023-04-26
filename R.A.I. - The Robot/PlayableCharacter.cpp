@@ -7,6 +7,8 @@ PlayableCharacter::PlayableCharacter()
     CharacterTextureStill = TextureManager::GetTexture(PLAYER_STILL_SHEET_TEXTURE);
     CharacterTextureRun = TextureManager::GetTexture(PLAYER_RUN_TEXTURE);
     CharacterSprite.setTexture(CharacterTextureStill);
+    JumpSound.setBuffer(SoundManager::getSoundBuffer(JUMP_SOUND));
+    DeathSound.setBuffer(SoundManager::getSoundBuffer(DEATH_SOUND));
 }
 
 void PlayableCharacter::spawn(Vector2f & position, float gravity)
@@ -136,6 +138,7 @@ void PlayableCharacter::handleInput()
         {
             TimeOfJump = 0;
             IsJumped = true;
+            JumpSound.play();
         }
     }else{
         IsJumped = false;
@@ -231,4 +234,9 @@ void PlayableCharacter::HealthUp()
     {
         Health++;
     }
+}
+
+void PlayableCharacter::PlayDeathSound()
+{
+    DeathSound.play();
 }

@@ -25,5 +25,19 @@
 #define LEVEL4 "Resources/map/Level4.txt"
 #define LEVEL5 "Resources/map/Level5.txt"
 #define LEVEL6 "Resources/map/Level6.txt"
+#define LEVEL7 "Resources/map/Level7.txt"
+
+//SOUNDS
+#define JUMP_SOUND "Resources/sounds/jump.wav"
+#define COLLECT_COIN_SOUND "Resources/sounds/collect_coin.wav"
+#define COLLECT_HEART_SOUND "Resources/sounds/collect_heart.wav"
+#define DEATH_SOUND "Resources/sounds/GameOver.wav"
+#define ENEMY_DEATH_SOUND "Resources/sounds/monster_death.wav"
+#define NEW_LEVEL_SOUND "Resources/sounds/round_end.wav"
+#define CLICK_SOUND "Resources/sounds/Click_sound.wav"
+
+//Music
+#define MAIN_MENU_MUSIC "Resources/sounds/main_menu_music.wav"
+#define GAME_MUSIC "Resources/sounds/Space-Music.wav"
 
 #endif /* RESOURCES_h */

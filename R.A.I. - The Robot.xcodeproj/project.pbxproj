@@ -39,6 +39,7 @@
 		1123811429F2D5CE002BA8AA /* SpawnCoins.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 112380FB29F2D5CE002BA8AA /* SpawnCoins.cpp */; };
 		1123811C29F2D65E002BA8AA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1123811B29F2D65E002BA8AA /* main.cpp */; };
 		1123815729F2E333002BA8AA /* Resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1123815529F2E328002BA8AA /* Resources */; };
+		11AA03BD29F98EAF0058EC91 /* SoundManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11AA03BB29F98EAF0058EC91 /* SoundManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -97,6 +98,8 @@
 		112380FB29F2D5CE002BA8AA /* SpawnCoins.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpawnCoins.cpp; sourceTree = "<group>"; };
 		1123811B29F2D65E002BA8AA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1123815529F2E328002BA8AA /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		11AA03BB29F98EAF0058EC91 /* SoundManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoundManager.cpp; sourceTree = "<group>"; };
+		11AA03BC29F98EAF0058EC91 /* SoundManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SoundManager.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 				112380F729F2D5CD002BA8AA /* SpawnHearts.cpp */,
 				112380E929F2D5CC002BA8AA /* UpdateCoins.cpp */,
 				112380E629F2D5CC002BA8AA /* UpdateHearts.cpp */,
+				11AA03BB29F98EAF0058EC91 /* SoundManager.cpp */,
+				11AA03BC29F98EAF0058EC91 /* SoundManager.hpp */,
 			);
 			path = "R.A.I. - The Robot";
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 				1123810229F2D5CE002BA8AA /* Engine.hpp in Sources */,
 				1123810329F2D5CE002BA8AA /* UpdateCoins.cpp in Sources */,
 				1123810429F2D5CE002BA8AA /* TextureManager.hpp in Sources */,
+				11AA03BD29F98EAF0058EC91 /* SoundManager.cpp in Sources */,
 				1123810529F2D5CE002BA8AA /* Update.cpp in Sources */,
 				1123810629F2D5CE002BA8AA /* TextureManager.cpp in Sources */,
 				1123810729F2D5CE002BA8AA /* SpawnEnemies.cpp in Sources */,

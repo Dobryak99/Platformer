@@ -6,6 +6,7 @@
 #include <SFML/Graphics.hpp>
 #include "RESOURCES.h"
 #include "TextureManager.hpp"
+#include "SoundManager.hpp"
 #include "LevelManager.hpp"
 #include "PlayableCharacter.hpp"
 #include "Enemy.hpp"
@@ -46,6 +47,9 @@ private:
     //Texture manager instance
     TextureManager TM;
     
+    //SoundBuffer manager instance
+    SoundManager SM;
+    
     //Level manager instance
     LevelManager LM;
     
@@ -68,6 +72,17 @@ private:
     Button ResumeButton;
     Button ScoreButton;                     // Non-clickable
     Button Loading;                         // Non-clickable
+    
+    //Sounds
+    Sound CollectCoinSound;
+    Sound CollectHeartSound;
+    Sound EnemyDeathSound;
+    Sound ReachedGoalSound;
+    Sound ButtonClickSound;
+    
+    //Music
+    Music MainMenuMusic;
+    Music GameMusic;
     
     //Views
     View MainMenuView;

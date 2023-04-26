@@ -40,11 +40,15 @@ void Engine::DetectCollision()
                 {
                     if(Player.getPosition().intersects(block))
                     {
-                        if(LM.getCurrentLevel() < LM.getMaxLevel())     // current level should be less than max level
+                        if(LM.getCurrentLevel() < LM.getMaxLevel() && IsPlaying)     // current level should be less than max level
                         {
+                            ReachedGoalSound.play();
+                            GameMusic.pause();
                             LoadNextLevel = true;       //load new level
                             NewLevelRequired = true;    //New level load
                         }else{
+                            GameMusic.stop();
+                            MainMenuMusic.play();
                             LoadNextLevel = false;      //stop loading levels
                             IsPlaying = false;          //stop playing
                             MainMenu = true;            //return to main menu
@@ -58,6 +62,7 @@ void Engine::DetectCollision()
                 {
                     if(Player.getFeet().intersects(block) || Player.getHead().intersects(block))
                     {
+                        Player.PlayDeathSound();
                         if(Player.getHealth() > 1)      //if player's health greater than 1
                         {
                             Player.spawn(LM.getStartPosition(), GRAVITY);   //spawn player at the start of the level
@@ -108,6 +113,7 @@ void Engine::DetectCollision()
             // if Player's feet collide with the enemy's head
             if(Player.getFeet().intersects(Enemies[i].getHead()))
             {
+                EnemyDeathSound.play();
                 Player.Bounce();    // Player make a small jump
                 Enemies.erase(Enemies.begin() + i);         // Enemy dies
                 LM.setEnemyNumber(static_cast<int>(Enemies.size()));          // Change the number of enemies on the level
@@ -116,7 +122,7 @@ void Engine::DetectCollision()
             //if Player's side  or head collide with the enemy's side
             if( Player.getRight().intersects(Enemies[i].getLeft()) || Player.getLeft().intersects(Enemies[i].getRight()) || Player.getHead().intersects(Enemies[i].getFeet()) || Player.getPosition().intersects(Enemies[i].getBody()) )
             {
-                
+                Player.PlayDeathSound();
                 if(Player.getHealth() > 1)      //if player's health greater than 1
                 {
                     Player.spawn(LM.getStartPosition(), GRAVITY);   //spawn player at the start of the level
@@ -138,6 +144,7 @@ void Engine::DetectCollision()
             Coins.erase(Coins.begin() + i);                                     // coin disappear
             LM.setCoinNumber(static_cast<int>(Coins.size()));                   // set new coin number on the level
             Score += 10;                                                        // +10 points
+            CollectCoinSound.play();
         }
     }
     
@@ -149,6 +156,7 @@ void Engine::DetectCollision()
             LM.setHeartNumber(static_cast<int>(CollectableHearts.size()));      //set new number of hearts on the level
             Player.HealthUp();                                                  // +1 HP
             Score += 5;                                                         // + 5 points
+            CollectHeartSound.play();
         }
     }
     
