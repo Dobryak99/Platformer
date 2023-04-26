@@ -64,7 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		112380CD29F2D53D002BA8AA /* Platfromer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Platfromer; sourceTree = BUILT_PRODUCTS_DIR; };
+		112380CD29F2D53D002BA8AA /* R.A.I. - The Robot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "R.A.I. - The Robot"; sourceTree = BUILT_PRODUCTS_DIR; };
 		112380D829F2D557002BA8AA /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "../../../../../../../../../Library/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
 		112380D929F2D557002BA8AA /* sfml-network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-network.framework"; path = "../../../../../../../../../Library/Frameworks/sfml-network.framework"; sourceTree = "<group>"; };
 		112380DA29F2D558002BA8AA /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "../../../../../../../../../Library/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				1123815529F2E328002BA8AA /* Resources */,
-				112380CF29F2D53D002BA8AA /* Platfromer */,
+				112380CF29F2D53D002BA8AA /* R.A.I. - The Robot */,
 				112380CE29F2D53D002BA8AA /* Products */,
 				112380D729F2D557002BA8AA /* Frameworks */,
 			);
@@ -128,12 +128,12 @@
 		112380CE29F2D53D002BA8AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				112380CD29F2D53D002BA8AA /* Platfromer */,
+				112380CD29F2D53D002BA8AA /* R.A.I. - The Robot */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		112380CF29F2D53D002BA8AA /* Platfromer */ = {
+		112380CF29F2D53D002BA8AA /* R.A.I. - The Robot */ = {
 			isa = PBXGroup;
 			children = (
 				1123811B29F2D65E002BA8AA /* main.cpp */,
@@ -163,7 +163,7 @@
 				112380E929F2D5CC002BA8AA /* UpdateCoins.cpp */,
 				112380E629F2D5CC002BA8AA /* UpdateHearts.cpp */,
 			);
-			path = Platfromer;
+			path = "R.A.I. - The Robot";
 			sourceTree = "<group>";
 		};
 		112380D729F2D557002BA8AA /* Frameworks */ = {
@@ -181,9 +181,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		112380CC29F2D53D002BA8AA /* Platfromer */ = {
+		112380CC29F2D53D002BA8AA /* R.A.I. - The Robot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 112380D429F2D53D002BA8AA /* Build configuration list for PBXNativeTarget "Platfromer" */;
+			buildConfigurationList = 112380D429F2D53D002BA8AA /* Build configuration list for PBXNativeTarget "R.A.I. - The Robot" */;
 			buildPhases = (
 				112380C929F2D53D002BA8AA /* Sources */,
 				112380CA29F2D53D002BA8AA /* Frameworks */,
@@ -194,9 +194,9 @@
 			);
 			dependencies = (
 			);
-			name = Platfromer;
+			name = "R.A.I. - The Robot";
 			productName = Platfromer;
-			productReference = 112380CD29F2D53D002BA8AA /* Platfromer */;
+			productReference = 112380CD29F2D53D002BA8AA /* R.A.I. - The Robot */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 112380C829F2D53D002BA8AA /* Build configuration list for PBXProject "Platfromer" */;
+			buildConfigurationList = 112380C829F2D53D002BA8AA /* Build configuration list for PBXProject "R.A.I. - The Robot" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -225,7 +225,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				112380CC29F2D53D002BA8AA /* Platfromer */,
+				112380CC29F2D53D002BA8AA /* R.A.I. - The Robot */,
 			);
 		};
 /* End PBXProject section */
@@ -409,7 +409,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		112380C829F2D53D002BA8AA /* Build configuration list for PBXProject "Platfromer" */ = {
+		112380C829F2D53D002BA8AA /* Build configuration list for PBXProject "R.A.I. - The Robot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				112380D229F2D53D002BA8AA /* Debug */,
@@ -418,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		112380D429F2D53D002BA8AA /* Build configuration list for PBXNativeTarget "Platfromer" */ = {
+		112380D429F2D53D002BA8AA /* Build configuration list for PBXNativeTarget "R.A.I. - The Robot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				112380D529F2D53D002BA8AA /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "112380CC29F2D53D002BA8AA"
-               BuildableName = "Platfromer"
-               BlueprintName = "Platfromer"
-               ReferencedContainer = "container:Platfromer.xcodeproj">
+               BuildableName = "R.A.I. - The Robot"
+               BlueprintName = "R.A.I. - The Robot"
+               ReferencedContainer = "container:R.A.I. - The Robot.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "112380CC29F2D53D002BA8AA"
-            BuildableName = "Platfromer"
-            BlueprintName = "Platfromer"
-            ReferencedContainer = "container:Platfromer.xcodeproj">
+            BuildableName = "R.A.I. - The Robot"
+            BlueprintName = "R.A.I. - The Robot"
+            ReferencedContainer = "container:R.A.I. - The Robot.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,9 +58,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "112380CC29F2D53D002BA8AA"
-            BuildableName = "Platfromer"
-            BlueprintName = "Platfromer"
-            ReferencedContainer = "container:Platfromer.xcodeproj">
+            BuildableName = "R.A.I. - The Robot"
+            BlueprintName = "R.A.I. - The Robot"
+            ReferencedContainer = "container:R.A.I. - The Robot.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,9 +81,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "112380CC29F2D53D002BA8AA"
-            BuildableName = "Platfromer"
-            BlueprintName = "Platfromer"
-            ReferencedContainer = "container:Platfromer.xcodeproj">
+            BuildableName = "R.A.I. - The Robot"
+            BlueprintName = "R.A.I. - The Robot"
+            ReferencedContainer = "container:R.A.I. - The Robot.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
