@@ -19,11 +19,6 @@ void Engine::Input()
                     IsPlaying = !IsPlaying;
                 }
             }
-            if(Keyboard::isKeyPressed(Keyboard::Enter))                     //Cheat-code to skip levels(Only for testing)
-            {
-                LoadNextLevel = true;       //load new level
-                NewLevelRequired = true;    //New level load
-            }
         }
         if(event.type == Event::MouseButtonPressed)
         {
@@ -35,6 +30,7 @@ void Engine::Input()
                 MainMenu = false;
                 GameOver = false;
                 IsPaused = false;
+                CreditMenu = false;
                 NewLevelRequired = true;
             }
             if(QuitButton.getPosition().intersects(mouseRect))          //Quit Button
@@ -50,6 +46,7 @@ void Engine::Input()
                 GameOver = false;
                 IsPaused = false;
                 IsPlaying = false;
+                CreditMenu = false;
                 MainMenu = true;
                 LM.setCurrentLevel(0);      //set level number to 0
                 Player.resetHealth();       //reset player's health
@@ -68,6 +65,12 @@ void Engine::Input()
                 ButtonClickSound.play();    //play click sound
                 IsPlaying = true;
                 IsPaused = false;
+            }
+            if(CreditButton.getPosition().intersects(mouseRect))
+            {
+                ButtonClickSound.play();
+                MainMenu = false;
+                CreditMenu = true;
             }
         }
         if(event.type == Event::MouseMoved)
@@ -102,6 +105,12 @@ void Engine::Input()
                 ResumeButton.changeColorRed();
             }else{
                 ResumeButton.changeColorWhite();
+            }
+            if(CreditButton.getPosition().intersects(mouseRect))
+            {
+                CreditButton.changeColorRed();
+            }else{
+                CreditButton.changeColorWhite();
             }
         }
         Player.handleInput();                   //Player control keys

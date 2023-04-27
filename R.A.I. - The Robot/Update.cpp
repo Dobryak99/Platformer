@@ -36,6 +36,11 @@ void Engine::Update(float & dtAsSeconds)
             GameMusic.play();
         }
     }
+    if(CreditMenu)
+    {
+        CoordinatesForView(resolution);
+        HUD();
+    }
     if(IsPlaying)
     {
         MainMenuMusic.stop();                           //stop playing main menu music

@@ -148,6 +148,8 @@
 				112380F829F2D5CD002BA8AA /* RESOURCES.h */,
 				112380EC29F2D5CD002BA8AA /* TextureManager.cpp */,
 				112380EA29F2D5CC002BA8AA /* TextureManager.hpp */,
+				11AA03BB29F98EAF0058EC91 /* SoundManager.cpp */,
+				11AA03BC29F98EAF0058EC91 /* SoundManager.hpp */,
 				112380E329F2D5CC002BA8AA /* LevelManager.cpp */,
 				112380E429F2D5CC002BA8AA /* LevelManager.hpp */,
 				112380E529F2D5CC002BA8AA /* PlayableCharacter.cpp */,
@@ -165,8 +167,6 @@
 				112380F729F2D5CD002BA8AA /* SpawnHearts.cpp */,
 				112380E929F2D5CC002BA8AA /* UpdateCoins.cpp */,
 				112380E629F2D5CC002BA8AA /* UpdateHearts.cpp */,
-				11AA03BB29F98EAF0058EC91 /* SoundManager.cpp */,
-				11AA03BC29F98EAF0058EC91 /* SoundManager.hpp */,
 			);
 			path = "R.A.I. - The Robot";
 			sourceTree = "<group>";

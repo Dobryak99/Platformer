@@ -39,4 +39,8 @@ void Engine::CoordinatesForView(Vector2f coord)
     {
         LoadNextLevelView.setCenter(coord.x / 2, coord.y / 2);
     }
+    if(CreditMenu)
+    {
+        CreditMenuView.setCenter(coord.x / 2, coord.y / 2);
+    }
 }

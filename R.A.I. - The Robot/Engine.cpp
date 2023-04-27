@@ -12,6 +12,7 @@ Engine::Engine()
     GameOverView.setSize(resolution);
     PauseView.setSize(resolution);
     LoadNextLevelView.setSize(resolution);
+    CreditMenuView.setSize(resolution);
     
     //Load background texture
     MainMenuBackgroundTexture = TextureManager::GetTexture(BACKGROUND_TEXTURE);

@@ -27,6 +27,7 @@ private:
     bool NewLevelRequired = false;
     bool GameOver = false;
     bool LoadNextLevel = false;
+    bool CreditMenu = false;
     
     //Variables
     const float TILE_SIZE = 32.0f;
@@ -70,8 +71,10 @@ private:
     Button RestartButton;
     Button ReturnToMainMenuButton;
     Button ResumeButton;
+    Button CreditButton;
     Button ScoreButton;                     // Non-clickable
     Button Loading;                         // Non-clickable
+    Button Credits;                         // Non-clickable
     
     //Sounds
     Sound CollectCoinSound;
@@ -90,6 +93,7 @@ private:
     View GameOverView;
     View PauseView;
     View LoadNextLevelView;
+    View CreditMenuView;
     
     
     /*======================
