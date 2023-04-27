@@ -13,7 +13,7 @@ void Engine::Input()
         {
             if(Keyboard::isKeyPressed(Keyboard::Escape))
             {
-                if(!MainMenu && !GameOver && !LoadNextLevel)                 //don't work if in main menu or game over menu or loading new level
+                if(!MainMenu && !GameOver && !LoadNextLevel && !CreditMenu)                 //don't work if in main menu or game over menu or loading new level
                 {
                     IsPaused = !IsPaused;
                     IsPlaying = !IsPlaying;
