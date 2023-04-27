@@ -4,6 +4,9 @@ void Engine::HUD()
 {
     if(MainMenu)
     {
+        //set title sprite
+        TitleSprite.setPosition(Vector2f(engine_window.getSize().x / 2 - TitleSprite.getGlobalBounds().width / 2, 200));
+        
         //set button on the center of the screen
         PlayButton.setPosition(Vector2f( (engine_window.getSize().x / 2) - PlayButton.getPosition().width / 2, (engine_window.getSize().y / 2) - PlayButton.getPosition().height / 2) );
         PlayButton.setSize(100);

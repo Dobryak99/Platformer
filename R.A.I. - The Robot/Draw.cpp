@@ -13,6 +13,7 @@ void Engine::Draw()
         engine_window.draw(PlayButton.getText());
         engine_window.draw(QuitButton.getText());
         engine_window.draw(CreditButton.getText());
+        engine_window.draw(TitleSprite);
     }
     if(GameOver)
     {

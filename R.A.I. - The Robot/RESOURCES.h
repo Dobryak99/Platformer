@@ -14,6 +14,7 @@
 #define HEART_TEXTURE "Resources/textures/Heart.png"
 #define COLLECTABLE_HEART_TEXTURE "Resources/textures/Heart collectable.png"
 #define COIN_TEXTURE "Resources/textures/coin.png"
+#define TITLE_TEXTURE "Resources/textures/Title.png"
 
 // FONT
 #define FONT "Resources/font/PixBob-lite Free.ttf"

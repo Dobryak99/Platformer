@@ -4,7 +4,7 @@ Engine::Engine()
 {
     resolution.x = VideoMode::getDesktopMode().width;
     resolution.y = VideoMode::getDesktopMode().height;
-    engine_window.create(VideoMode(resolution.x, resolution.y), "My Game", Style::Fullscreen);
+    engine_window.create(VideoMode(resolution.x, resolution.y), "R.A.I. - The Robot", Style::Fullscreen);
     
     //Set View
     GameView.setSize(resolution);
@@ -29,6 +29,9 @@ Engine::Engine()
     GameCaveBackgroundTexture.setRepeated(true);
     GameCaveBackgroundSprite.setTextureRect(IntRect(0,0,1280 * 5, 800));
     GameCaveBackgroundSprite.setTexture(GameCaveBackgroundTexture);
+    
+    Title = TextureManager::GetTexture(TITLE_TEXTURE);
+    TitleSprite.setTexture(Title);
     
     LoadNewLeveltexture = TextureManager::GetTexture(LOAD_NEW_LEVEL_TEXTURE);
     LoadNewLevelSprite.setTexture(LoadNewLeveltexture);
