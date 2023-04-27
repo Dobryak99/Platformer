@@ -6,6 +6,7 @@
 #include <SFML/Graphics.hpp>
 #include "RESOURCES.h"
 #include "TextureManager.hpp"
+#include "SoundManager.hpp"
 #include "LevelManager.hpp"
 #include "PlayableCharacter.hpp"
 #include "Enemy.hpp"
@@ -26,6 +27,7 @@ private:
     bool NewLevelRequired = false;
     bool GameOver = false;
     bool LoadNextLevel = false;
+    bool CreditMenu = false;
     
     //Variables
     const float TILE_SIZE = 32.0f;
@@ -45,6 +47,9 @@ private:
     
     //Texture manager instance
     TextureManager TM;
+    
+    //SoundBuffer manager instance
+    SoundManager SM;
     
     //Level manager instance
     LevelManager LM;
@@ -66,8 +71,21 @@ private:
     Button RestartButton;
     Button ReturnToMainMenuButton;
     Button ResumeButton;
+    Button CreditButton;
     Button ScoreButton;                     // Non-clickable
     Button Loading;                         // Non-clickable
+    Button Credits;                         // Non-clickable
+    
+    //Sounds
+    Sound CollectCoinSound;
+    Sound CollectHeartSound;
+    Sound EnemyDeathSound;
+    Sound ReachedGoalSound;
+    Sound ButtonClickSound;
+    
+    //Music
+    Music MainMenuMusic;
+    Music GameMusic;
     
     //Views
     View MainMenuView;
@@ -75,6 +93,7 @@ private:
     View GameOverView;
     View PauseView;
     View LoadNextLevelView;
+    View CreditMenuView;
     
     
     /*======================

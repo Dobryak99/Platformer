@@ -9,14 +9,19 @@ void Engine::HUD()
         PlayButton.setSize(100);
         PlayButton.setText("PLAY");
         
+         CreditButton.setPosition(Vector2f(engine_window.getSize().x / 2 - CreditButton.getPosition().width / 2, engine_window.getSize().y / 2 - CreditButton.getPosition().height / 2 + 100) );
+        CreditButton.setSize(80);
+        CreditButton.setText("CREDIT");
+        
         //set button on the center of X coordinate and a little lower of Y coordinate
-        QuitButton.setPosition(Vector2f( (engine_window.getSize().x / 2) - QuitButton.getPosition().width / 2, (engine_window.getSize().y / 2) - QuitButton.getPosition().height / 2 + 100 ) );
+        QuitButton.setPosition(Vector2f( (engine_window.getSize().x / 2) - QuitButton.getPosition().width / 2, (engine_window.getSize().y / 2) - QuitButton.getPosition().height / 2 + 200 ) );
         QuitButton.setSize(80);
         QuitButton.setText("QUIT");
         
         RestartButton.setPosition(Vector2f(-1000, -1000));                  //hide button
         ReturnToMainMenuButton.setPosition(Vector2f(-1000, -1000));         //hide button
         ResumeButton.setPosition(Vector2f(-1000, -1000));                   //hide button
+        Credits.setPosition(Vector2f(-1000, -1000));                        //hide button
     }
     
     if(IsPlaying)
@@ -24,6 +29,7 @@ void Engine::HUD()
         PlayButton.setPosition(Vector2f(-1000, -1000));         //hide button
         QuitButton.setPosition(Vector2f(-1000, -1000));         //hide button
         ResumeButton.setPosition(Vector2f(-1000, -1000));       //hide button
+        CreditButton.setPosition(Vector2f(-1000, -1000));       //hide button
         
         
         stringstream ssScore;
@@ -99,5 +105,20 @@ void Engine::HUD()
         Loading.setPosition( Vector2f( (engine_window.getSize().x / 2) - Loading.getPosition().width / 2 , (engine_window.getSize().y / 2) - Loading.getPosition().height / 2) );
         Loading.setSize(100);
         Loading.setText("Loading...");
+    }
+    
+    if(CreditMenu)
+    {
+        PlayButton.setPosition(Vector2f(-1000, -1000));         //hide button
+        QuitButton.setPosition(Vector2f(-1000, -1000));         //hide button
+        CreditButton.setPosition(Vector2f(-1000, -1000));       //hide button
+        
+        Credits.setPosition(Vector2f((engine_window.getSize().x / 2) - Credits.getPosition().width / 2, (engine_window.getSize().y / 2) - Credits.getPosition().height / 2 - 100));
+        Credits.setSize(30);
+        Credits.setText("All the sounds and music created by:\n-jobromedia\n-Ogrebane\n-Dklon\n-Sauer2\n-Jalastram\n-den_yes\n-Jkjkke\n-Hitctrl");
+        
+        ReturnToMainMenuButton.setPosition(Vector2f( (engine_window.getSize().x / 2) - ReturnToMainMenuButton.getPosition().width / 2, (engine_window.getSize().y / 2) - ReturnToMainMenuButton.getPosition().height / 2 + 200 ) );
+        ReturnToMainMenuButton.setSize(80);
+        ReturnToMainMenuButton.setText("MAIN MENU");
     }
 }

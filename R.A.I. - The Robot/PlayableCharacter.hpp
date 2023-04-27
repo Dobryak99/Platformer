@@ -5,6 +5,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "TextureManager.hpp"
+#include "SoundManager.hpp"
 #include "RESOURCES.h"
 
 using namespace sf;
@@ -23,6 +24,8 @@ private:
     Texture CharacterTextureStill;                  //Texture when player don't move
     Texture CharacterTextureRun;                    //Texture when player move right
     Sprite CharacterSprite;                         //Sprite
+    Sound JumpSound;                                //Jump sound of the player
+    Sound DeathSound;                               //Death sound
     FloatRect Feet;                                 // rect of the Feet to detect collision with the block
     FloatRect Head;                                 // rect of the head to detect collision with the block
     FloatRect RightSide;                            // rect of the right side  to detect collision with the block
@@ -46,6 +49,7 @@ public:
     void Bounce();                                  //player bounce from enemy's head
     int getHealth();                                //get player's health
     void resetHealth();                             //reset player's health after death or after complete all levels
+    void PlayDeathSound();                          //Play death sound
     FloatRect & getFeet();                          //get rect of the feet
     FloatRect & getHead();                          //get rect of the Head
     FloatRect & getRight();                         //get rect of the right side

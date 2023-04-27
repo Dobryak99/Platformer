@@ -12,6 +12,7 @@ Engine::Engine()
     GameOverView.setSize(resolution);
     PauseView.setSize(resolution);
     LoadNextLevelView.setSize(resolution);
+    CreditMenuView.setSize(resolution);
     
     //Load background texture
     MainMenuBackgroundTexture = TextureManager::GetTexture(BACKGROUND_TEXTURE);
@@ -45,10 +46,28 @@ Engine::Engine()
     CoinSprite.setTexture(CoinTexture);
     
     tileTexture = TextureManager::GetTexture(TILE_SHEET_TEXTURE);
+    
+    //Sounds
+    CollectCoinSound.setBuffer(SoundManager::getSoundBuffer(COLLECT_COIN_SOUND));
+    CollectHeartSound.setBuffer(SoundManager::getSoundBuffer(COLLECT_HEART_SOUND));
+    EnemyDeathSound.setBuffer(SoundManager::getSoundBuffer(ENEMY_DEATH_SOUND));
+    ReachedGoalSound.setBuffer(SoundManager::getSoundBuffer(NEW_LEVEL_SOUND));
+    ReachedGoalSound.setVolume(25);
+    ButtonClickSound.setBuffer(SoundManager::getSoundBuffer(CLICK_SOUND));
+    
+    //Music
+    MainMenuMusic.openFromFile(MAIN_MENU_MUSIC);
+    MainMenuMusic.setLoop(true);
+    MainMenuMusic.setVolume(25);
+    
+    GameMusic.openFromFile(GAME_MUSIC);
+    GameMusic.setLoop(true);
+    GameMusic.setVolume(25);
 }
 
 void Engine::run()
 {
+    MainMenuMusic.play();                                                   //playing main menu music
     Clock clock;
     while(engine_window.isOpen())
     {

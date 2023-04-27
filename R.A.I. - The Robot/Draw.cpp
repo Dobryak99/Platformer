@@ -12,6 +12,7 @@ void Engine::Draw()
         engine_window.draw(MainMenuBackgroundSprite);
         engine_window.draw(PlayButton.getText());
         engine_window.draw(QuitButton.getText());
+        engine_window.draw(CreditButton.getText());
     }
     if(GameOver)
     {
@@ -35,6 +36,14 @@ void Engine::Draw()
         engine_window.setView(LoadNextLevelView);
         engine_window.draw(LoadNewLevelSprite);
         engine_window.draw(Loading.getText());
+    }
+    
+    if(CreditMenu)
+    {
+        engine_window.setView(CreditMenuView);
+        engine_window.draw(GameBackgroundSprite);
+        engine_window.draw(ReturnToMainMenuButton.getText());
+        engine_window.draw(Credits.getText());
     }
     
     //if the player in the game or in pause menu

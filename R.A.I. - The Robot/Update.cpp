@@ -33,10 +33,17 @@ void Engine::Update(float & dtAsSeconds)
             waitTime = 0;                               //set time to 0
             IsPlaying = true;                           // play again
             LoadNextLevel = false;                      // stop loading level
+            GameMusic.play();
         }
+    }
+    if(CreditMenu)
+    {
+        CoordinatesForView(resolution);
+        HUD();
     }
     if(IsPlaying)
     {
+        MainMenuMusic.stop();                           //stop playing main menu music
         Player.update(dtAsSeconds);
         CoordinatesForView(Player.getAXIS());           //set view center
         UpdateCoins(dtAsSeconds);                       //animating coins

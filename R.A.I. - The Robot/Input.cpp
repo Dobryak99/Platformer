@@ -24,21 +24,29 @@ void Engine::Input()
         {
             if(PlayButton.getPosition().intersects(mouseRect))          //Play Button
             {
+                ButtonClickSound.play();    //play click sound
+                GameMusic.play();           //play game music
                 IsPlaying = true;
                 MainMenu = false;
                 GameOver = false;
                 IsPaused = false;
+                CreditMenu = false;
                 NewLevelRequired = true;
             }
             if(QuitButton.getPosition().intersects(mouseRect))          //Quit Button
             {
+                ButtonClickSound.play();    //play click sound
                 engine_window.close();
             }
             if(ReturnToMainMenuButton.getPosition().intersects(mouseRect))  //Return Button
             {
+                ButtonClickSound.play();    //play click sound
+                GameMusic.stop();
+                MainMenuMusic.play();       //play main menu music again
                 GameOver = false;
                 IsPaused = false;
                 IsPlaying = false;
+                CreditMenu = false;
                 MainMenu = true;
                 LM.setCurrentLevel(0);      //set level number to 0
                 Player.resetHealth();       //reset player's health
@@ -46,6 +54,7 @@ void Engine::Input()
             }
             if(RestartButton.getPosition().intersects(mouseRect))       //Restart button
             {
+                ButtonClickSound.play();    //play click sound
                 IsPlaying = true;
                 MainMenu = false;
                 GameOver = false;
@@ -53,8 +62,15 @@ void Engine::Input()
             }
             if(ResumeButton.getPosition().intersects(mouseRect))        //Resume button
             {
+                ButtonClickSound.play();    //play click sound
                 IsPlaying = true;
                 IsPaused = false;
+            }
+            if(CreditButton.getPosition().intersects(mouseRect))
+            {
+                ButtonClickSound.play();
+                MainMenu = false;
+                CreditMenu = true;
             }
         }
         if(event.type == Event::MouseMoved)
@@ -89,6 +105,12 @@ void Engine::Input()
                 ResumeButton.changeColorRed();
             }else{
                 ResumeButton.changeColorWhite();
+            }
+            if(CreditButton.getPosition().intersects(mouseRect))
+            {
+                CreditButton.changeColorRed();
+            }else{
+                CreditButton.changeColorWhite();
             }
         }
         Player.handleInput();                   //Player control keys
