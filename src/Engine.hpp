@@ -157,7 +157,7 @@ private:
     void LoadLevel();
     
     //Collision Detection function
-    void DetectCollision();//float dt);
+    void DetectCollision();
     
     //Set coordinates for View
     void CoordinatesForView(Vector2f coord);
