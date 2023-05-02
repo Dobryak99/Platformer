@@ -49,4 +49,4 @@ The main goal of the project is to develop the skills of writing C++ code using 
   
   Font was Downloaded from [dafont](https://www.dafont.com/pixbob-lite.font).
   
-  All the textures were made by the me.
+  All the textures were made by [ME](https://github.com/Dobryak99).
