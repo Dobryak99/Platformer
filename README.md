@@ -15,4 +15,8 @@ The main goal of the project is to develop the skills of writing C++ code using 
  # Installing
  1. Download ZIP file of the repository
  2. Transfer files to your PC
- 3. 
+ ```
+ mkdir build
+ cd build
+ cmake ..
+ ```
