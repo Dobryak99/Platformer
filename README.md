@@ -35,6 +35,19 @@ The main goal of the project is to develop the skills of writing C++ code using 
  1. Copy the absolute path to "Resource" directory
  2. open RESOURCES.h file in ./src directory
  3. Paste the path to directory
+
+## Screenshots
+![Alt text](https://github.com/Dobryak99/SFML-Platformer/blob/master/screenshots/Jump.png)
+
+![Alt text](https://github.com/Dobryak99/SFML-Platformer/blob/master/screenshots/Load_screen.png)
+
+![Alt text](https://github.com/Dobryak99/SFML-Platformer/blob/master/screenshots/diff_level.png)
+
+![Alt text](https://github.com/Dobryak99/SFML-Platformer/blob/master/screenshots/level.png)
+
+![Alt text](https://github.com/Dobryak99/SFML-Platformer/blob/master/screenshots/main_menu.png)
+
+![Alt text](https://github.com/Dobryak99/SFML-Platformer/blob/master/screenshots/pause_menu.png)
  
   # Credits
   All the music and sounds were created by:
